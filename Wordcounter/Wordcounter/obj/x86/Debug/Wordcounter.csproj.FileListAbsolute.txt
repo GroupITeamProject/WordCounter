@@ -1,0 +1,4 @@
+C:\Users\Gavin\Documents\GitHub\WordCounter\Wordcounter\Wordcounter\bin\Debug\Wordcounter.exe
+C:\Users\Gavin\Documents\GitHub\WordCounter\Wordcounter\Wordcounter\bin\Debug\Wordcounter.pdb
+C:\Users\Gavin\Documents\GitHub\WordCounter\Wordcounter\Wordcounter\obj\x86\Debug\Wordcounter.exe
+C:\Users\Gavin\Documents\GitHub\WordCounter\Wordcounter\Wordcounter\obj\x86\Debug\Wordcounter.pdb
