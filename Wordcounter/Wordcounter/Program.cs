@@ -13,14 +13,14 @@ using System.IO;
  
 */
 
-namespace WordCounter
+namespace Wordcounter
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(File.Exists("tester") ? "File exists." : "File does not exist.");
-            using (StreamReader sr = new StreamReader("testers.txt"))
+            Console.WriteLine(File.Exists("C:\\Users\\Mini-EPIC\\Documents\\EVE\\logs\\Chatlogs\\Rookie_Help_20130120_225718.txt") ? "File exists." : "File does not exist.");
+            using (StreamReader sr = new StreamReader("C:\\Users\\Mini-EPIC\\Documents\\EVE\\logs\\Chatlogs\\Rookie_Help_20130120_225718.txt"))
             {
 
 
@@ -40,6 +40,7 @@ namespace WordCounter
                     from the split up line string. The line string is split up on the
                     space ascii number by using the .Split(' '); function. 
                     */
+                    
                     string[] words = line.Split(' ');
 
                     /*
@@ -51,14 +52,21 @@ namespace WordCounter
                          and if it does it increments the value for said word, if not(or if else :) ) 
                          then it adds the word to the dictionary
                          */
-                        if (dict.ContainsKey(word))
+
+
+                        //Checks if the "string" in word ONLY contains letters!!
+                        if (new ValidString().isValid(word))
                         {
-                            dict[word]++;
-                        }
-                        else
-                        {
-                            dict.Add(word, 0);
-                            dict[word] = 1;
+
+                            if (dict.ContainsKey(word))
+                            {
+                                dict[word]++;
+                            }
+                            else
+                            {
+                                dict.Add(word, 0);
+                                dict[word] = 1;
+                            }
                         }
 
                 }
